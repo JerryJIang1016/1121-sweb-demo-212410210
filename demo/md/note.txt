@@ -1,2 +1,20 @@
 git config --global user.email “212410210@o365.tku.edu.tw”
 git config --global user.name “JerryJiang1015”
+
+git commit -m ""
+
+### w04-P1: share to teacher and TA
+
+![](w04-p1.png)
+
+### w04-P2: My Introduction in only index.html
+
+![](w04-p2.png)
+
+### w04-P3: My Introduction using style_xx.css
+
+![](w04-p3.png)
+
+### w04-O4: W2 git logs
+
+![](w04-p4.png)
