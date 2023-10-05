@@ -1,0 +1,86 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+:root {
+    --primary:rgba(121, 19, 210, 0.6);
+    --primary-dark:rgba(36, 9, 60, 0.825);
+    --grey: #111;
+    --grey-light: #111;
+    --grey-dark: #111;
+    border-radius: 0.5rem;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: var(--primary-dark);
+    background-color: var(--primary);
+}
+
+.img {
+    width: 100%;
+    height: 16rem;
+    display: block;
+    object-fit: cover;
+}
+
+.blogs {
+    padding: 3rem 2rem;
+}
+
+
+.section-title h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.blogs-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    
+}
+
+.blog {
+    background-color:rgba(190, 146, 248, 0.9);
+    padding: 0.75rem ;
+    margin-bottom: 0.1rem;
+    box-shadow: 0 5px 12px rgba(41, 4, 73, 0.9);
+    border-radius: 0.5rem;
+}
+
+.blogs-center span {
+    text-transform: uppercase;
+    color: rgb(152, 30, 228);
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.blogs-center h3 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+}
+
+.blogs-center p {
+    color: rgb(15, 1, 23);
+    margin-bottom: 0.5rem;
+}
+
+.blogs-center a {
+    text-transform: capitalize;
+    color: rgb(69, 39, 240);
+    letter-spacing: 0.75px;
+}
