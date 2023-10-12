@@ -1,8 +1,5 @@
 
 
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +8,7 @@
 :root {
     --primary:rgba(14, 1, 44, 0.9);
     --primary-dark:rgba(104, 41, 212, 0.825);
-    --blue: rgba(54, 37, 187, 0.825);
+    --white: rgb(245, 245, 250);
     --grey: #181818;
     --grey-light: #111;
     --grey-dark: #111;
@@ -21,7 +18,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
-    color: var(--blue);
+    color: var(--white);
     background-color: var(--primary);
 }
 
@@ -47,7 +44,7 @@ body {
 
 .blogs-center {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     margin: 0 auto;
     
@@ -91,3 +88,34 @@ body {
     color: rgb(69, 39, 240);
     letter-spacing: 0.75px;
 }
+
+@media screen and (min-width: 426px) {
+    .blogs-center {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blogs-center {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blogs-center {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .blogs-center {
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .blogs-center {
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
