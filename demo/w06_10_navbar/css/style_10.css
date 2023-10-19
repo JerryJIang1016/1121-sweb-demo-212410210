@@ -97,6 +97,16 @@ Navbar
     padding-bottom:3px;
 }
 
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-white);
+    box-shadow: var(--light-shadow) ;
+    z-index: 2;
+}
+
 /*
 ==========
 Blogs
