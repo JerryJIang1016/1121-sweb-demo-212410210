@@ -70,6 +70,17 @@ Navbar
     color:rgb(28, 55, 144);
 }
 
+.nav-header a {
+    text-decoration: none;
+    font-size: 1rem;
+    color:rgb(28, 55, 144);
+}
+
+.nav-header h4 {
+    font-size: 1rem;
+    color:rgb(28, 55, 144);
+}
+
 .nav-center {
     display: flex;
     justify-content: space-around;
