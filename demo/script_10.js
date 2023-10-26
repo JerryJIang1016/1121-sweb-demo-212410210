@@ -6,19 +6,19 @@ function showdemo(week){
             p.innerHTML =  `<iframe src="./w02_10_intro/index.html" width="100%" height="100%" />`;
             break;
         case 3:
-            ;
+            p.innerHTML =  `<iframe src="./w03_10_card/index.html" width="100%" height="100%" />`;
             break;
         case 4:
-            ;
+            p.innerHTML =  `<iframe src="./w04_10_blog/index.html" width="100%" height="100%" />`;
             break;
         case 5:
-            ;
+            p.innerHTML =  `<iframe src="./w05_10_blog/index.html" width="100%" height="100%" />`;
             break;
         case 6:
             p.innerHTML =  `<iframe src="./w06_10_navbar/index.html" width="100%" height="100%" />`;
             break;
         case 7:
-            ;
+            p.innerHTML = `<iframe src="./index.html" width="100%" height="100%" />`;
             break;
     }
 }
