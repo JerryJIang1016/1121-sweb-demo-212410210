@@ -1,0 +1,35 @@
+@use 'global_10';
+
+/*
+=============== 
+Navbar
+===============
+*/
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-primary-10);
+    height: 4rem;
+
+    &-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: relative;
+    }
+
+    &-links {
+        display: none;
+    }
+
+    &-btn {
+        position:absolute ;
+        right: 1.5rem;
+        font-size: 2rem;
+        color: var(--clr-primary-5);
+        background-color: transparent;
+        border-color: transparent;
+    }
+}

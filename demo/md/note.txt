@@ -6,6 +6,7 @@ git commit -m "
 git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-11-22"
 
 sass --watch scss:css
+sass --watch demo/w12_portfolio_10/scss:demo/w12_portfolio_10/css
 
 /d/1N/1121-sweb-demo-212410210/demo/w11_mid-2_10/mid-2_10/cards_10
 小素材 icon
@@ -32,3 +33,15 @@ https://www.w3schools.com/
 ![](W0-p4.png)
 
 
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about_10.html">about</a>
+          </li>
+          <li>
+            <a href="projects_10.html">projects</a>
+          </li>
+          <li>
+            <a href="contact_10.html">contact</a>
+          </li>
