@@ -31,17 +31,3 @@ https://www.w3schools.com/
 ### W0-O4:
 
 ![](W0-p4.png)
-
-
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <li>
-            <a href="about_10.html">about</a>
-          </li>
-          <li>
-            <a href="projects_10.html">projects</a>
-          </li>
-          <li>
-            <a href="contact_10.html">contact</a>
-          </li>
