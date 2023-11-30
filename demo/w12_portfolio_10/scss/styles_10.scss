@@ -33,3 +33,28 @@ Navbar
         border-color: transparent;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .nav{
+        &-links {
+            display: flex;
+            gap: 1.5rem;
+            position: absolute;
+            right: 3rem;
+
+            li a {
+                color: var(--clr-grey-5);
+
+                &:hover{
+                    color: var(--clr-primary-5);
+                    border-bottom: 2px solid rgba(133,26,26,0.5);
+                }
+            }
+        }
+
+        &-btn {
+            display: none;
+        }
+    }
+    
+}
