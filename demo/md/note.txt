@@ -3,7 +3,7 @@ git config --global user.name “JerryJiang1015”
 
 git commit -m "
 
-git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-12-06"
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-12-13"
 
 sass --watch scss:css
 sass --watch demo/w13_portfolio_10/scss:demo/w13_portfolio_10/css
