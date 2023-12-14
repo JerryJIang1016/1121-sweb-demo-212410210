@@ -112,7 +112,5 @@ Navbar
 .show-classdemo {
     width:100%;
     height:92vh;
-    margin-top:5 rem;
     background-color:#645cff;
-    display: block;
 }
