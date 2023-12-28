@@ -1,5 +1,6 @@
 @use 'global_10';
 @use 'resume_10';
+@use 'profile_10';
 
 /*
 ===============
@@ -680,9 +681,11 @@ Footer
     background-color: #222;
     display: grid;
     place-items: center;
+    
     padding-bottom: 1rem ;
 
     .social-icon {
+        margin-top: 0.5rem;
         margin-bottom: 1rem;
         color: var(--clr-primary-5);
 
