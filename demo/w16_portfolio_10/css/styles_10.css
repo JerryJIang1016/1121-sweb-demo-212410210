@@ -206,6 +206,98 @@ p {
   background: var(--clr-grey-10);
 }
 
+.resume .container {
+  background: #f5f5f5;
+  max-width: 800px;
+  margin: 60px auto;
+  height: 1440px;
+  padding: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+.resume .header {
+  text-align: center;
+}
+.resume .header h1 {
+  margin-bottom: 10px;
+}
+.resume .header h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+.resume .img-area {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  border: 15px groove deepskyblue;
+}
+.resume .img-area img {
+  width: 100%;
+}
+.resume .main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume .left {
+  flex: 1;
+  padding: 30px;
+}
+.resume .left p {
+  line-height: 2;
+}
+.resume .left ul li {
+  line-height: 2;
+}
+.resume h2 {
+  background: #00b6c4;
+  padding: 15px;
+  color: #fff;
+  margin: 30px 0;
+  font-size: 20px;
+  border-radius: 0 50px 50px 0;
+}
+.resume .right {
+  flex: 1;
+  padding: 30px;
+}
+.resume .right h3 {
+  margin-bottom: 15px;
+}
+.resume .right p {
+  line-height: 2.9;
+}
+.resume .right ul li {
+  line-height: 2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .resume .container {
+    width: 95%;
+    height: auto;
+  }
+  .resume h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .resume .main {
+    flex-direction: column;
+  }
+  .resume .left,
+  .resume .right {
+    flex: none;
+    width: 100%;
+  }
+  .resume .container {
+    width: 95%;
+    height: auto;
+  }
+  .resume h2 {
+    font-size: 15px;
+  }
+}
 /*
 ===============
 Navbar
@@ -690,6 +782,57 @@ w5-Blogs
   .blogs .blogs-center {
     grid-template-columns: repeat(6, 1fr);
   }
+}
+
+/*
+==========
+Tiles
+==========
+*/
+.w7-tileslayout .tiles {
+  padding: 2rem 0;
+}
+.w7-tileslayout .tiles-center {
+  width: 90vw;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 12.5rem);
+  gap: 1rem;
+  grid-template-areas: "a a b d" "a a b d" "c c e f" "g h e f" "g h i i";
+}
+.w7-tileslayout .tiles-center img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.w7-tileslayout .tile-1 {
+  grid-area: a;
+}
+.w7-tileslayout .tile-2 {
+  grid-area: b;
+}
+.w7-tileslayout .tile-3 {
+  grid-area: c;
+}
+.w7-tileslayout .tile-4 {
+  grid-area: d;
+}
+.w7-tileslayout .tile-5 {
+  grid-area: e;
+}
+.w7-tileslayout .tile-6 {
+  grid-area: f;
+}
+.w7-tileslayout .tile-7 {
+  grid-area: g;
+}
+.w7-tileslayout .tile-8 {
+  grid-area: h;
+}
+.w7-tileslayout .tile-9 {
+  grid-area: i;
 }
 
 /*
