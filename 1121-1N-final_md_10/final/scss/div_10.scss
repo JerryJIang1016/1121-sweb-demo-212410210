@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 20 0;
+}
+
+.div_container_10 {
+    height:100vh;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 0.6fr 4fr 0.4fr;
+    gap: 0.5rem;
+    grid-template-areas:
+    'a b b b'
+    'c d d d'
+    'c d d d'
+    'c d d d'
+    'e e e e';
+  .logo {
+    grid-area: a;
+    background-color: bisque;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .header{
+    grid-area: b;
+    background-color: blanchedalmond;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .article {
+    grid-area: c;
+    background-color: azure;
+    text-align: center;
+    text-transform: uppercase;
+    .nav {
+      background-color:aqua;
+      margin: 0.75rem;
+      height: 70vh;
+    }
+  }
+
+  .aside {
+    grid-area: d;
+    background-color: antiquewhite;
+    text-align: center;
+    text-transform: uppercase;
+    section {
+      margin: 0.75rem;
+      height: 70vh;
+      background-color: darkgray;
+      text-align: left;
+      .display {
+        margin: 5vh 20vh;
+        height: 30vh;
+        background-color: aquamarine;
+        text-align:center;
+        display: grid;
+        align-items: center;
+      }
+      .picContainer {
+        margin: 3vh ;
+        margin-left: 5vh;
+        height: 20vh;
+        background-color: brown;
+        display: grid;
+        grid-template-columns: repeat(5,1fr) ;
+        .small_pic {
+          margin: 1vh;
+          margin-top: 7vh;
+          img{
+            height: 5vh;
+          }
+          
+        }
+      }
+    }
+    
+  }
+
+  .footer{
+    grid-area: e;
+    background-color: burlywood;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 550px) {
+  .div_container_10 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
+    grid-template-areas:
+    'a a a a'
+    'b b b b'
+    'c c c c'
+    'd d d d'
+    'e e e e';
+    .logo{
+      height: 5vh;
+    }
+    .header{
+      height: 5vh;
+    }
+    .article {
+      height: 25vh;
+      .nav{
+        height: 20vh;
+      }
+    }
+    .aside{
+      height: 50vh;
+      section{
+        height: 40vh;
+        .display{
+          height: 15vh;
+
+        }
+        .picContainer {
+          height: 10vh;
+          .small_pic {
+            margin: 1vh;
+            margin-top: 4vh;
+            img{
+              height: 4vh;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+}
