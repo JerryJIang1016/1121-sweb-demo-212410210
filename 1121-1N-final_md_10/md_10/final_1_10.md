@@ -179,39 +179,34 @@
 
 ##### => local
 
+##### Your Answer:
+
 ![p2-4-1.png](p2-4-1.png)
 ![p2-4-2.png](p2-4-2.png)
 
-##### Your Answer:
-
-![p2-4-3.png](p2-4-3.png)
-
-![p2-4-4.png](p2-4-4.png)
-
 ##### => Vercel
+
+##### Your Answer:
 
 ![p2-4-5.png](p2-4-5.png)
 
 ![p2-4-6.png](p2-4-6.png)
 
-##### Your Answer:
-
-![p2-4-7.png](p2-4-7.png)
-
-![p2-4-8.png](p2-4-8.png)
-
 ##### => git log
 
 ![p2-4-9.png](p2-4-9.png)
 
-```
-39facd9 htchung Thu Jan 4 17:11:44 2024 +0800   P2-4: make a link in megamenu_xx.html, and put it to Vercel
-```
+````
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2024-01-03"
+a2b960b “JerryJiang1015”        Thu Jan 4 22:35:40 2024 +0800   P2-4: make a link in megamenu_xx.html, and put it to Vercel```
 
 ##### Your Answer:
 
-```
+````
+
 git log
+
 ```
 
 ![p2-4-10.png](p2-4-10.png)
+```
