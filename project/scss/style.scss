@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
+<<<<<<< HEAD
 :root {
     /* dark shades of primary color*/
     --clr-primary-1: hsl(43, 86%, 17%);
@@ -40,6 +41,11 @@
 body , html {
     font-family: 'Cabin', sans-serif;
     background-color: rgb(248, 244, 255);
+=======
+body , html {
+    font-family: 'Cabin', sans-serif;
+    background-color: aqua;
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
     margin: 0;
 
     a {
@@ -54,18 +60,29 @@ header {
         font-weight: bold;
     }
     .menu-btn{
+<<<<<<< HEAD
         width: 1.5rem;
+=======
+        width: 18px;
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
         float: right;
         cursor: pointer;
     }
 }
 
 section {
+<<<<<<< HEAD
     padding: 2em;
     h1{
         font-size: 5em;
         margin: 1em auto;
         margin-bottom: 0.1rem;
+=======
+    padding: 4em;
+    h1{
+        font-size: 4em;
+        margin: 1em auto;
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
         width: 70%;
         text-transform: uppercase;
 
@@ -75,6 +92,7 @@ section {
             display: block;
         }
     }
+<<<<<<< HEAD
     h2{
         font-size: 6em;
         margin: 1em auto;
@@ -117,25 +135,47 @@ nav
     padding: 2em;
     width: calc(100% - 4em);
     height: calc(300% - 4em);
+=======
+}
+
+nav {
+    position: absolute;
+    background:black;
+    padding: 2em;
+    width: calc(100% - 4em);
+    height: calc(100vh - 4em);
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
     display: none;
     transform: scaleX(0);
     transform-origin: right;
 
     .close-button {
+<<<<<<< HEAD
         width: 1.5rem;
+=======
+        width: 18px;
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
         float: right;
         cursor: pointer;
         opacity: 0;
     }
 
+<<<<<<< HEAD
     ul {
+=======
+    ul{
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
         list-style-type: none;
         margin: 10% auto 0 auto ;
         padding: 0;
         display: grid;
         grid-template-columns: repeat(4, auto);
         width: 80%;
+<<<<<<< HEAD
         a {
+=======
+        a{
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
             color: white;
             font-weight: bold;
             font-size: 1.4em;
@@ -147,6 +187,7 @@ nav
             margin-top:20px;
 
         }
+<<<<<<< HEAD
         li {
             opacity: 0;
         }
@@ -160,6 +201,12 @@ nav
             transition: var(--transition);
             grid-template-columns: repeat(5, auto);
         }
+=======
+        li{
+            opacity: 0;
+        }
+    }
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 }
 
 .show-menu {
@@ -212,6 +259,7 @@ nav
     }
 }
 
+<<<<<<< HEAD
 /*
 ==========
 Tiles
@@ -826,3 +874,5 @@ Tiles
         'g h i i';
     }
 }
+=======
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4

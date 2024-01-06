@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
+<<<<<<< HEAD
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(43, 86%, 17%);
@@ -41,6 +42,14 @@ body, html {
   background-color: rgb(248, 244, 255);
   margin: 0;
 }
+=======
+body, html {
+  font-family: 'Cabin', sans-serif;
+  background-color: aqua;
+  margin: 0;
+}
+
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 body a, html a {
   text-decoration: none;
 }
@@ -48,17 +57,28 @@ body a, html a {
 header {
   padding: 2em;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 header .logo {
   color: black;
   font-weight: bold;
 }
+<<<<<<< HEAD
 header .menu-btn {
   width: 1.5rem;
+=======
+
+header .menu-btn {
+  width: 18px;
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
   float: right;
   cursor: pointer;
 }
 
 section {
+<<<<<<< HEAD
   padding: 2em;
 }
 section h1 {
@@ -115,23 +135,71 @@ nav {
 }
 nav .close-button {
   width: 1.5rem;
+=======
+  padding: 4em;
+}
+
+section h1 {
+  font-size: 4em;
+  margin: 1em auto;
+  width: 70%;
+  text-transform: uppercase;
+}
+
+section h1::before {
+  content: '';
+  border-top: 6px solid black;
+  display: block;
+}
+
+nav {
+  position: absolute;
+  background: black;
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+nav .close-button {
+  width: 18px;
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
   float: right;
   cursor: pointer;
   opacity: 0;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 nav ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
   padding: 0;
+<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(4, auto);
   width: 80%;
 }
+=======
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  width: 80%;
+}
+
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 nav ul a {
   color: white;
   font-weight: bold;
   font-size: 1.4em;
 }
+<<<<<<< HEAD
 nav ul span {
   color: gray;
   display: block;
@@ -169,16 +237,91 @@ nav .social-icon {
 }
 .show-menu li:nth-of-type(4) {
   animation: menu-item-anim 0.6s forwards 1.8s ease-in-out;
+=======
+
+nav ul span {
+  color: gray;
+  display: block;
+  font-size: .75em;
+  margin-top: 20px;
+}
+
+nav ul li {
+  opacity: 0;
+}
+
+.show-menu {
+  display: block;
+  -webkit-animation: slide-menu 1s ease-in forwards;
+          animation: slide-menu 1s ease-in forwards;
+}
+
+.show-menu .close-button {
+  -webkit-animation: show-x 1s 1s forwards;
+          animation: show-x 1s 1s forwards;
+}
+
+.show-menu li:nth-of-type(1) {
+  -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
+          animation: menu-item-anim .6s forwards 1s ease-in-out;
+}
+
+.show-menu li:nth-of-type(2) {
+  -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.2s ease-in-out;
+}
+
+.show-menu li:nth-of-type(3) {
+  -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.6s ease-in-out;
+}
+
+.show-menu li:nth-of-type(4) {
+  -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+          animation: menu-item-anim .6s forwards 1.8s ease-in-out;
+}
+
+@-webkit-keyframes slide-menu {
+  from {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 }
 
 @keyframes slide-menu {
   from {
+<<<<<<< HEAD
     transform: scaleX(0);
   }
   to {
     transform: scaleX(1);
   }
 }
+=======
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes show-x {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 @keyframes show-x {
   from {
     opacity: 0;
@@ -187,6 +330,7 @@ nav .social-icon {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
 @keyframes menu-item-anim {
   from {
     transform: translateY(70%);
@@ -743,3 +887,32 @@ Tiles
 }
 
 /*# sourceMappingURL=style.css.map */
+=======
+
+@-webkit-keyframes menu-item-anim {
+  from {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes menu-item-anim {
+  from {
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
