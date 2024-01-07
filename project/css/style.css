@@ -1,5 +1,8 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cabin");
-<<<<<<< HEAD
+/*
+sass --watch project/scss:project/css
+*/
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(43, 86%, 17%);
@@ -39,46 +42,28 @@
 
 body, html {
   font-family: "Cabin", sans-serif;
-  background-color: rgb(248, 244, 255);
+  background-color: rgb(252, 245, 255);
   margin: 0;
 }
-=======
-body, html {
-  font-family: 'Cabin', sans-serif;
-  background-color: aqua;
-  margin: 0;
-}
-
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 body a, html a {
   text-decoration: none;
 }
 
 header {
   padding: 2em;
+  background-color: rgba(200, 90, 255, 0.1);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 header .logo {
-  color: black;
+  color: rgb(21, 0, 28);
   font-weight: bold;
 }
-<<<<<<< HEAD
 header .menu-btn {
   width: 1.5rem;
-=======
-
-header .menu-btn {
-  width: 18px;
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
   float: right;
   cursor: pointer;
 }
 
 section {
-<<<<<<< HEAD
   padding: 2em;
 }
 section h1 {
@@ -118,6 +103,20 @@ section h3::before {
   display: block;
 }
 
+.project {
+  transition: background-color 0.3s ease;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.project:hover {
+  background-color: #a725d6;
+  color: #ffffff;
+}
+
 /*
 ===============
 nav
@@ -125,7 +124,7 @@ nav
 */
 nav {
   position: absolute;
-  background: rgb(43, 41, 41);
+  background: rgba(31, 2, 40, 0.99);
   padding: 2em;
   width: calc(100% - 4em);
   height: calc(300% - 4em);
@@ -135,71 +134,23 @@ nav {
 }
 nav .close-button {
   width: 1.5rem;
-=======
-  padding: 4em;
-}
-
-section h1 {
-  font-size: 4em;
-  margin: 1em auto;
-  width: 70%;
-  text-transform: uppercase;
-}
-
-section h1::before {
-  content: '';
-  border-top: 6px solid black;
-  display: block;
-}
-
-nav {
-  position: absolute;
-  background: black;
-  padding: 2em;
-  width: calc(100% - 4em);
-  height: calc(100vh - 4em);
-  display: none;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-}
-
-nav .close-button {
-  width: 18px;
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
   float: right;
   cursor: pointer;
   opacity: 0;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 nav ul {
   list-style-type: none;
   margin: 10% auto 0 auto;
   padding: 0;
-<<<<<<< HEAD
   display: grid;
   grid-template-columns: repeat(4, auto);
   width: 80%;
 }
-=======
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
-  width: 80%;
-}
-
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 nav ul a {
   color: white;
   font-weight: bold;
   font-size: 1.4em;
 }
-<<<<<<< HEAD
 nav ul span {
   color: gray;
   display: block;
@@ -210,13 +161,32 @@ nav ul li {
   opacity: 0;
 }
 nav .social-icon {
-  height: 10rem;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
   gap: 6rem;
   margin-top: 3rem;
   font-size: 2rem;
   color: white;
   transition: var(--transition);
-  grid-template-columns: repeat(5, auto);
+}
+nav .social-icon-a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+@keyframes enlargeAndFlash {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+nav .social-icon a:hover {
+  animation: enlargeAndFlash 1s infinite;
 }
 
 .show-menu {
@@ -237,91 +207,16 @@ nav .social-icon {
 }
 .show-menu li:nth-of-type(4) {
   animation: menu-item-anim 0.6s forwards 1.8s ease-in-out;
-=======
-
-nav ul span {
-  color: gray;
-  display: block;
-  font-size: .75em;
-  margin-top: 20px;
-}
-
-nav ul li {
-  opacity: 0;
-}
-
-.show-menu {
-  display: block;
-  -webkit-animation: slide-menu 1s ease-in forwards;
-          animation: slide-menu 1s ease-in forwards;
-}
-
-.show-menu .close-button {
-  -webkit-animation: show-x 1s 1s forwards;
-          animation: show-x 1s 1s forwards;
-}
-
-.show-menu li:nth-of-type(1) {
-  -webkit-animation: menu-item-anim .6s forwards 1s ease-in-out;
-          animation: menu-item-anim .6s forwards 1s ease-in-out;
-}
-
-.show-menu li:nth-of-type(2) {
-  -webkit-animation: menu-item-anim .6s forwards 1.2s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.2s ease-in-out;
-}
-
-.show-menu li:nth-of-type(3) {
-  -webkit-animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.6s ease-in-out;
-}
-
-.show-menu li:nth-of-type(4) {
-  -webkit-animation: menu-item-anim .6s forwards 1.8s ease-in-out;
-          animation: menu-item-anim .6s forwards 1.8s ease-in-out;
-}
-
-@-webkit-keyframes slide-menu {
-  from {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 }
 
 @keyframes slide-menu {
   from {
-<<<<<<< HEAD
     transform: scaleX(0);
   }
   to {
     transform: scaleX(1);
   }
 }
-=======
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-  }
-  to {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-  }
-}
-
-@-webkit-keyframes show-x {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4
 @keyframes show-x {
   from {
     opacity: 0;
@@ -330,7 +225,6 @@ nav ul li {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
 @keyframes menu-item-anim {
   from {
     transform: translateY(70%);
@@ -403,6 +297,107 @@ Tiles
   grid-area: i;
 }
 
+/*
+==========
+resume
+==========
+*/
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blog-post {
+  background-color: #f8f2ff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.blog-post h2 {
+  margin-bottom: 10px;
+}
+
+.resume-section {
+  background-color: #ffffff;
+  padding: 20px;
+}
+.resume-section h2 {
+  margin-bottom: 1rem;
+  font-size: 4em;
+  margin-top: 0.1rem;
+  width: 70%;
+  text-transform: uppercase;
+}
+.resume-section h2::before {
+  content: "";
+  border-bottom: 6px solid black;
+  display: block;
+}
+.resume-section .resume {
+  display: flex;
+  justify-content: space-between; /* 讓 .resume-item 和 .details-menu 充滿水平空間 */
+  align-items: flex-start; /* 讓 .resume-item 和 .details-menu 上對齊 */
+}
+.resume-section .resume-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* 文本由左至右排列 */
+  margin-bottom: 20px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.resume-section .resume-item img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 10px; /* 調整圖片與文字之間的間距 */
+}
+.resume-section .resume-item .date {
+  font-weight: bold;
+}
+.resume-section .resume-item .job-title {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+.resume-section .resume-item .company {
+  color: #555;
+}
+.resume-section .details-menu {
+  display: flex;
+  flex-direction: column; /* 將按鈕垂直排列 */
+  align-items: flex-end; /* 讓按鈕右對齊 */
+  margin-left: 20px; /* 調整 .details-menu 與 .resume-item 之間的間距 */
+}
+.resume-section .details-menu a {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 10px; /* 調整按鈕之間的間距 */
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.resume-section .details-menu a:hover {
+  background-color: #ccc;
+  transform: translateY(-5px);
+}
+
+@media (min-width: 768px) {
+  .resume {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .resume-item {
+    width: calc(100% - 20px);
+    margin-right: 20px;
+  }
+  .resume-item:nth-child(even) {
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 375px) {
   nav .close-button {
     width: 1.5rem;
@@ -483,7 +478,7 @@ Tiles
     grid-template-areas: "a a" "b b" "c c" "d d" "e e" "f f" "g g" "h h" "i i";
   }
 }
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 375px) {
   nav .close-button {
     width: 1.5rem;
     float: right;
@@ -546,7 +541,7 @@ Tiles
     display: block;
   }
   section h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: auto;
     margin-bottom: 1rem;
     margin-top: 0.1rem;
@@ -709,12 +704,14 @@ Tiles
     font-size: 2rem;
   }
   header .menu-btn {
-    width: 2.5rem;
+    width: 3rem;
+    margin-right: 1rem;
     float: right;
     cursor: pointer;
   }
   nav .close-button {
     width: 3rem;
+    margin-right: 1.5rem;
     float: right;
     cursor: pointer;
     opacity: 0;
@@ -799,11 +796,13 @@ Tiles
   header .logo {
     color: black;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-left: 1rem;
   }
   header .menu-btn {
-    width: 4rem;
+    width: 4.5rem;
     float: right;
+    margin-right: 1.5rem;
     cursor: pointer;
   }
   nav .close-button {
@@ -816,17 +815,17 @@ Tiles
   nav ul {
     margin-top: 2rem;
     grid-template-columns: repeat(4, auto);
-    gap: 1rem;
+    gap: 1.5rem;
   }
   nav ul a {
     color: white;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 3em;
   }
   nav ul span {
     color: gray;
     display: block;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 0.5rem;
   }
   nav ul li {
@@ -836,7 +835,7 @@ Tiles
   nav .social-icon {
     height: 10rem;
     gap: 1rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: white;
     transition: var(--transition);
   }
@@ -887,32 +886,3 @@ Tiles
 }
 
 /*# sourceMappingURL=style.css.map */
-=======
-
-@-webkit-keyframes menu-item-anim {
-  from {
-    -webkit-transform: translateY(70%);
-            transform: translateY(70%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes menu-item-anim {
-  from {
-    -webkit-transform: translateY(70%);
-            transform: translateY(70%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-/*# sourceMappingURL=style.css.map */
->>>>>>> 405354ae0f44f09d9f40ef5ab91286e6e02189e4

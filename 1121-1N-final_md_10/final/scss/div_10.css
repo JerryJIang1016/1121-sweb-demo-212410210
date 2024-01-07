@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  margin: 20 0;
+}
+
+.div_container_10 {
+  height: 100vh;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 0.6fr 4fr 0.4fr;
+  gap: 0.5rem;
+  grid-template-areas: "a b b b" "c d d d" "c d d d" "c d d d" "e e e e";
+}
+.div_container_10 .logo {
+  grid-area: a;
+  background-color: bisque;
+  text-align: center;
+  text-transform: uppercase;
+}
+.div_container_10 .header {
+  grid-area: b;
+  background-color: blanchedalmond;
+  text-align: center;
+  text-transform: uppercase;
+}
+.div_container_10 .article {
+  grid-area: c;
+  background-color: azure;
+  text-align: center;
+  text-transform: uppercase;
+}
+.div_container_10 .article .nav {
+  background-color: aqua;
+  margin: 0.75rem;
+  height: 70vh;
+}
+.div_container_10 .aside {
+  grid-area: d;
+  background-color: antiquewhite;
+  text-align: center;
+  text-transform: uppercase;
+}
+.div_container_10 .aside section {
+  margin: 0.75rem;
+  height: 70vh;
+  background-color: darkgray;
+  text-align: left;
+}
+.div_container_10 .aside section .display {
+  margin: 5vh 20vh;
+  height: 30vh;
+  background-color: aquamarine;
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+.div_container_10 .aside section .picContainer {
+  margin: 3vh;
+  margin-left: 5vh;
+  height: 20vh;
+  background-color: brown;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.div_container_10 .aside section .picContainer .small_pic {
+  margin: 1vh;
+  margin-top: 7vh;
+}
+.div_container_10 .aside section .picContainer .small_pic img {
+  height: 5vh;
+}
+.div_container_10 .footer {
+  grid-area: e;
+  background-color: burlywood;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 550px) {
+  .div_container_10 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 1fr 2fr 0.4fr;
+    grid-template-areas: "a a a a" "b b b b" "c c c c" "d d d d" "e e e e";
+  }
+  .div_container_10 .logo {
+    height: 5vh;
+  }
+  .div_container_10 .header {
+    height: 5vh;
+  }
+  .div_container_10 .article {
+    height: 25vh;
+  }
+  .div_container_10 .article .nav {
+    height: 20vh;
+  }
+  .div_container_10 .aside {
+    height: 50vh;
+  }
+  .div_container_10 .aside section {
+    height: 40vh;
+  }
+  .div_container_10 .aside section .display {
+    height: 15vh;
+  }
+  .div_container_10 .aside section .picContainer {
+    height: 10vh;
+  }
+  .div_container_10 .aside section .picContainer .small_pic {
+    margin: 1vh;
+    margin-top: 4vh;
+  }
+  .div_container_10 .aside section .picContainer .small_pic img {
+    height: 4vh;
+  }
+}/*# sourceMappingURL=div_10.css.map */
