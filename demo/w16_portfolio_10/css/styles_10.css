@@ -479,6 +479,22 @@ Sidebar
   transition: var(--transition);
 }
 
+.sidebar .hero-img {
+  display: none;
+}
+
+.sidebar.active .hero-img {
+  display: block;
+}
+
+.sidebar .about-img {
+  display: none;
+}
+
+.sidebar.active .about-img {
+  display: block;
+}
+
 /*
 ===============
 Hero

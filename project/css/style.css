@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Cabin");
 /*
 sass --watch project/scss:project/css
@@ -127,7 +126,7 @@ nav {
   background: rgba(31, 2, 40, 0.99);
   padding: 2em;
   width: calc(100% - 4em);
-  height: calc(300% - 4em);
+  height: calc(200% - 4em);
   display: none;
   transform: scaleX(0);
   transform-origin: right;
@@ -237,6 +236,139 @@ nav .social-icon a:hover {
 }
 /*
 ==========
+Blogs
+==========
+*/
+.blogs img {
+  width: 100%;
+  height: 16rem;
+  display: block;
+  object-fit: cover;
+}
+
+.blogs {
+  padding: 0rem 2rem;
+  padding-bottom: 3rem;
+}
+
+.section-title h2 {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+  font-size: 2rem;
+}
+
+.blogs-center {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.blogs-center2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.blog {
+  background-color: rgba(187, 140, 248, 0.95);
+  padding: 0.75rem;
+  margin-bottom: 0.1rem;
+  box-shadow: 0 5px 12px rgba(41, 4, 73, 0.9);
+  border-radius: 0.5rem;
+}
+
+.blog-content {
+  margin-top: 0.5rem;
+}
+
+.blogs-center span {
+  text-transform: uppercase;
+  color: rgb(28, 55, 144);
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.blogs-center h3 {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.blogs-center p {
+  color: rgb(44, 1, 69);
+  margin-bottom: 0.5rem;
+}
+
+.blogs-center a {
+  text-transform: capitalize;
+  color: rgb(69, 39, 240);
+  letter-spacing: 0.75px;
+}
+
+.blogs-center2 span {
+  text-transform: uppercase;
+  color: rgb(48, 83, 196);
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.blogs-center2 h3 {
+  text-transform: capitalize;
+  margin: 0.2rem 0;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  display: grid;
+  justify-content: start;
+  width: 100%;
+}
+
+.blogs-center2 p {
+  color: rgb(28, 1, 44);
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.blogs-center2 a {
+  text-transform: capitalize;
+  color: rgb(215, 209, 247);
+  letter-spacing: 0.75px;
+}
+
+@media screen and (min-width: 426px) {
+  .blogs-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .blogs-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 992px) {
+  .blogs-center {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .blogs-center {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .blogs-center {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+/*
+==========
 Tiles
 ==========
 */
@@ -322,6 +454,7 @@ main {
 .resume-section {
   background-color: #ffffff;
   padding: 20px;
+  padding-top: 3rem;
 }
 .resume-section h2 {
   margin-bottom: 1rem;
@@ -336,14 +469,13 @@ main {
   display: block;
 }
 .resume-section .resume {
-  display: flex;
-  justify-content: space-between; /* 讓 .resume-item 和 .details-menu 充滿水平空間 */
-  align-items: flex-start; /* 讓 .resume-item 和 .details-menu 上對齊 */
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .resume-section .resume-item {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* 文本由左至右排列 */
+  align-items: center;
   margin-bottom: 20px;
   padding: 2rem;
   border: 1px solid #ddd;
@@ -352,7 +484,7 @@ main {
 .resume-section .resume-item img {
   width: 10rem;
   height: 10rem;
-  margin-bottom: 10px; /* 調整圖片與文字之間的間距 */
+  margin-bottom: 10px;
 }
 .resume-section .resume-item .date {
   font-weight: bold;
@@ -365,15 +497,13 @@ main {
   color: #555;
 }
 .resume-section .details-menu {
+  margin-left: 20px;
   display: flex;
-  flex-direction: column; /* 將按鈕垂直排列 */
-  align-items: flex-end; /* 讓按鈕右對齊 */
-  margin-left: 20px; /* 調整 .details-menu 與 .resume-item 之間的間距 */
+  gap: 0.5rem;
 }
 .resume-section .details-menu a {
   display: inline-block;
-  padding: 10px;
-  margin-bottom: 10px; /* 調整按鈕之間的間距 */
+  padding: 1rem;
   text-decoration: none;
   color: #333;
   background-color: #ddd;
@@ -398,7 +528,48 @@ main {
     margin-right: 0;
   }
 }
+/*
+=============== 
+Footer
+===============
+*/
+.footer {
+  background-color: #222;
+  display: grid;
+  place-items: center;
+  padding-bottom: 1rem;
+}
+.footer .social-icon {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+.footer .social-icon a {
+  color: whitesmoke;
+  transition: color 0.3s ease;
+}
+.footer .social-icon a:hover {
+  color: rgb(150, 91, 199);
+}
+.footer p {
+  color: #f8f2ff;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+/*
+=============== 
+Responsive
+===============
+*/
 @media screen and (max-width: 375px) {
+  nav {
+    height: calc(300% - 4em);
+  }
   nav .close-button {
     width: 1.5rem;
     float: right;
@@ -477,8 +648,14 @@ main {
     gap: 1rem;
     grid-template-areas: "a a" "b b" "c c" "d d" "e e" "f f" "g g" "h h" "i i";
   }
+  .resume-section .details-menu a {
+    padding: 1rem 0.5rem;
+  }
 }
 @media screen and (min-width: 375px) {
+  nav {
+    height: calc(250% - 4em);
+  }
   nav .close-button {
     width: 1.5rem;
     float: right;
@@ -558,10 +735,14 @@ main {
     gap: 1rem;
     grid-template-areas: "a a b b" "c c d d" "e e f f" "g g i i" "h h i i";
   }
+  .resume-section .details-menu a {
+    padding: 1rem 0.5rem;
+  }
 }
 @media screen and (min-width: 520px) {
   section {
     padding: 2em;
+    height: calc(100% - 4em);
   }
   section h1 {
     font-size: 3rem;
@@ -693,10 +874,15 @@ main {
     gap: 1rem;
     grid-template-areas: "a a b d" "a a b d" "c c e f" "g h e f" "g h i i";
   }
+  .resume-section .details-menu a {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   header {
     padding: 2em;
+    height: calc(200% - 4em);
   }
   header .logo {
     color: black;
@@ -740,7 +926,7 @@ main {
   nav .social-icon {
     height: 10rem;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: white;
     transition: var(--transition);
   }
@@ -787,6 +973,27 @@ main {
     grid-template-columns: repeat(0, 0fr);
     gap: 1rem;
     grid-template-areas: "a a b d" "a a b d" "c c e f" "g h e f" "g h i i";
+  }
+  .resume-section .resume .resume-item img {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 10px;
+  }
+  .resume-section .resume .resume-item .date {
+    font-weight: bold;
+  }
+  .resume-section .resume .resume-item .job-title {
+    font-size: 2.5rem;
+    margin-top: 8px;
+  }
+  .resume-section .resume .resume-item .company {
+    font-size: 2rem;
+  }
+  .resume-section .resume .resume-item p {
+    font-size: 2rem;
+  }
+  .footer .social-icon {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -835,7 +1042,7 @@ main {
   nav .social-icon {
     height: 10rem;
     gap: 1rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: white;
     transition: var(--transition);
   }
@@ -882,6 +1089,37 @@ main {
     grid-template-columns: repeat(0, 0fr);
     gap: 1rem;
     grid-template-areas: "a a b d" "a a b d" "c c e f" "g h e f" "g h i i";
+  }
+  .resume-section .details-menu a {
+    padding: 1.5rem 3rem;
+    font-size: 1.5rem;
+  }
+  main {
+    max-width: 1200px;
+  }
+  main .blog-post {
+    font-size: 1.75rem;
+  }
+  .resume-section .resume .resume-item img {
+    width: 18rem;
+    height: 18rem;
+    margin-bottom: 10px;
+  }
+  .resume-section .resume .resume-item .date {
+    font-weight: bold;
+  }
+  .resume-section .resume .resume-item .job-title {
+    font-size: 2.5rem;
+    margin-top: 8px;
+  }
+  .resume-section .resume .resume-item .company {
+    font-size: 2rem;
+  }
+  .resume-section .resume .resume-item p {
+    font-size: 2rem;
+  }
+  .footer .social-icon {
+    font-size: 2.5rem;
   }
 }
 
