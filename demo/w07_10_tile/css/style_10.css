@@ -212,3 +212,141 @@ Tiles
         grid-template-columns: repeat(6,1fr);
     }
 }
+
+/*
+==========
+Blogs
+==========
+*/
+
+.blogs img {
+    width: 100%;
+    height: 16rem;
+    display: block;
+    object-fit: cover;
+}
+
+.blogs {
+    padding: 3rem 2rem;
+}
+
+
+.section-title h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.blogs-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    
+}
+
+.blogs-center2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
+    gap: 2rem;
+    margin: 0 auto;
+    
+}
+
+.blog {
+    background-color:rgba(160, 106, 230, 0.95);
+    padding: 0.75rem ;
+    margin-bottom: 0.1rem;
+    box-shadow: 0 5px 12px rgba(41, 4, 73, 0.9);
+    border-radius: 0.5rem;
+}
+
+.blog-content{
+    margin-top: 0.5rem;
+}
+
+.blogs-center span {
+    text-transform: uppercase;
+    color: rgb(28, 55, 144);
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.blogs-center h3 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.blogs-center p {
+    color: rgb(44, 1, 69);
+    margin-bottom: 0.5rem;
+}
+
+.blogs-center a {
+    text-transform: capitalize;
+    color: rgb(69, 39, 240);
+    letter-spacing: 0.75px;
+}
+
+.blogs-center2 span {
+    text-transform: uppercase;
+    color: rgb(28, 55, 144);
+    letter-spacing: 1.5px;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.blogs-center2 h3 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+.blogs-center2 p {
+    color: rgb(44, 1, 69);
+    margin-bottom: 0.5rem;
+}
+
+.blogs-center2 a {
+    text-transform: capitalize;
+    color: rgb(69, 39, 240);
+    letter-spacing: 0.75px;
+}
+
+@media screen and (min-width: 426px) {
+    .blogs-center {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blogs-center {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blogs-center {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .blogs-center {
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .blogs-center {
+        grid-template-columns: repeat(6,1fr);
+    }
+}
